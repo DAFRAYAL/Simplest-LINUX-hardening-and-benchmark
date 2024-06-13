@@ -1,12 +1,14 @@
 # Simplest LINUX hardening and benchmark
 
-Will add hosts file and DNS, and firewall with other unix system groups allocations. You can always use ITARIAN, SNORT services.
+Will add other unix system groups allocations later. You can always use ITARIAN, SNORT services.
 
 Don't use asterisk in DEBIAN packaging installations. You may try that on RED HAT.
 
-Oracle Linux is most recommended.
+ORACLE LINUX is most recommended. Yet CENTOS Is more compatible with packages.
 
-Use PCI-DSS policies.
+UBUNTU is the best.
+
+Use PCI-DSS, CIS or DISA policies if you want, but this is pretty much it.
 
 If you cannot install UNIX through kind of VENTOY set of UEFI boot loading then do not install it at all since intranet.
 
