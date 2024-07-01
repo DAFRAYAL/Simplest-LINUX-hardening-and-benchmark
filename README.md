@@ -15,10 +15,12 @@ I think that you can use your user account as exclusive with automatic logon whi
 If you cannot install UNIX through kind of VENTOY set of UEFI boot loading then do not install it at all since intranet.
 
 Use encrypted containers or encrypted virtual hard drives instead of disk encryptions for any work since internet.
-
+#
+#
 I am using these permissions listed below.
 We grant ourselves with own user account name permission over folders.
-
+#
+#
 sudo chown exzo:exzo /home/
 sudo chmod 755 /home/
 
@@ -63,14 +65,20 @@ sudo chmod 755 /sys/
 
 sudo chown exzo:exzo /usr/
 sudo chmod 755 /usr/
-
+#
+#
 Nobody likes this extension?
-
+#
+#
 sudo chown root:root /usr/share/gnome-shell/extensions/
+#
+#
 sudo chmod 700 /usr/share/gnome-shell/extensions/
-
+#
+#
 System folders
-
+#
+#
 sudo chown root:root /dev/cpu/
 sudo chmod 700 /dev/cpu/
 
