@@ -14,7 +14,7 @@ I think that you can use your user account as exclusive with automatic logon whi
 
 If you cannot install UNIX through kind of VENTOY set of UEFI boot loading then do not install it at all since intranet.
 
-Use encrypted containers or encrypted virtual hard drives instead of disk encryptions for any work since internet.
+Use encrypted containers or encrypted virtual hard drives instead of disk encryptions for any work since internet. There's no application to encrypt existing folders currently 2024.
 #
 #
 I am using these permissions listed below.
@@ -217,4 +217,3 @@ sudo chmod 700 /mnt/
 sudo chown root:root /root/
 
 sudo chmod 700 /root/
-
