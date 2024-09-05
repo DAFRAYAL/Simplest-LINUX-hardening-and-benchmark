@@ -221,4 +221,5 @@ sudo chown root:root /root/
 
 sudo chmod 700 /root/
 
-Finally delete sudo service file format alter connection looper and all services that end with .wants.
+Finally delete sudo service file format alter connection pre-emptive looper and all services that end with .wants.
+This service can appear and disappear depending on firewall.
