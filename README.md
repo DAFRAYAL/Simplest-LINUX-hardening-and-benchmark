@@ -226,3 +226,7 @@ This service can appear and disappear depending on firewall.
 
 Install FIREWALLD, OPENSNITCH, SURICATA, FIREJAIL, RKHUNTER, CLAMAV, PRELOAD over SNORT and UFW.
 By then unless more software happens it was done.
+Dangerous commands listed below
+sudo systemd-run --scope -p MemoryLimit=10000M -p CPUQuota=100% ionice -c3 -n7 *kworker*
+ulimit -f 10000000 *
+sudo ionice -c3 -p $$ or *
