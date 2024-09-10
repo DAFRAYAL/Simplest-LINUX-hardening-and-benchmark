@@ -6,7 +6,7 @@ Don't use asterisk in DEBIAN packaging installations. You may try that on RED HA
 
 ORACLE LINUX is most recommended. Yet CENTOS Is more compatible with packages.
 
-UBUNTU is the best.
+UBUNTU is the best. With PLASMA desktop environment, because it does not need GNOME shell or GDM.
 
 Use PCI-DSS, CIS or DISA policies if you want, but this is pretty much it. 
 
@@ -223,3 +223,6 @@ sudo chmod 700 /root/
 
 Finally delete sudo service file format alter connection pre-emptive looper and all services that end with .wants.
 This service can appear and disappear depending on firewall.
+
+Install FIREWALLD, OPENSNITCH, SURICATA, FIREJAIL, RKHUNTER, CLAMAV, PRELOAD over SNORT and UFW.
+By then unless more software happens it was done.
