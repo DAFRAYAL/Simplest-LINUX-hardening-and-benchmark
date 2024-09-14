@@ -4,7 +4,7 @@ Will add other unix system groups allocations later. You can always use ITARIAN,
 
 Don't use asterisk in DEBIAN packaging installations. You may try that on RED HAT.
 
-ORACLE LINUX is most recommended. Yet CENTOS Is more compatible with packages.
+ORACLE LINUX is most recommended. Yet CENTOS Is more compatible with packages.`
 
 UBUNTU is the best. With PLASMA desktop environment, because it does not need GNOME shell or GDM.
 
@@ -15,6 +15,8 @@ I think that you can use your user account as exclusive with automatic logon whi
 So. Create another user and just sudo chown that user whole system file permission from recovery console except /root/ folder which should be over allocated with root permissions. It is chown user:user "*/*/*/*/*/*" or chown user:user "/*/*/*/*/*/*" and keep going back until chown user:user / on the length without chmod command. This user has chroot and cpu in limits.conf /etc/security at 0. Thus your main user that you will use can be exclusive.
 
 You get error like WARNING: cannot start document portal: Can't mount path /run/user/1000/doc. Fix it yourself for applications coming with DEBIAN. All after /etc/sudoers is that user except that /etc/sudoers folder. /etc/sudoers.d is that user and /etc/sudoers/README is that user and if you have ZFS then /etc/sudoers.d/zfs is that user from recovery console and finally for logged on user /usr/bin/sudo is root and it needs the chmod which is chmod 4755 /usr/bin/sudo
+
+So. You will have to enable services over and over again of applications.
 
 If you cannot install UNIX through kind of VENTOY set of UEFI boot loading then do not install it at all since intranet.
 
