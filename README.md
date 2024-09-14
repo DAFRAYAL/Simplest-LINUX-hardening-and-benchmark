@@ -47,6 +47,8 @@ sudo apt update
 
 Install FIREWALLD, OPENSNITCH, SURICATA, FIREJAIL, RKHUNTER, CLAMAV, PRELOAD on default over SNORT and UFW.
 
+Chrome works without error over the decoy user.
+
 sudo apt install *-*gnome*
 
 sudo apt update
