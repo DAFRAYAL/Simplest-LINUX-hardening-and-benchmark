@@ -12,6 +12,10 @@ Use PCI-DSS, CIS or DISA policies if you want, but this is pretty much it.
 
 I think that you can use your user account as exclusive with automatic logon while having its chroot at zero.
 
+So. Create another user and just sudo chown that user whole system file permission from recovery console except /root/ folder which should be over allocated with root permissions. It is chown user:user */*/*/*/*/* or chown user:user /*/*/*/*/*/* and keep going back on the length without chmod command. This user has chroot and cpu in limits.conf /etc/security at 0. Thus your main user that you will use can be exclusive.
+
+You get error like WARNING: cannot start document portal: Can't mount path /run/user/1000/doc. Fix it yourself for applications coming with DEBIAN. All after /etc/sudoers is that user except that /etc/sudoers folder. /etc/sudoers.d is that user and /etc/sudoers/README is that user and if you have ZFS then /etc/sudoers.d/zfs is that user from recovery console and finally for logged on user /usr/bin/sudo is root and it needs the chmod which is chmod 4755 /usr/bin/sudo
+
 If you cannot install UNIX through kind of VENTOY set of UEFI boot loading then do not install it at all since intranet.
 
 Use encrypted containers or encrypted virtual hard drives instead of disk encryptions for any work since internet. 
@@ -221,12 +225,37 @@ sudo chown root:root /root/
 
 sudo chmod 700 /root/
 
-Finally delete sudo service file format alter connection pre-emptive looper and all services that end with .wants.
+Finally delete sudo service file format alter connection pre-emptive looper and all services in etc/systemd/system must be rooted.
+
 This service can appear and disappear depending on firewall.
 
-Install FIREWALLD, OPENSNITCH, SURICATA, FIREJAIL, RKHUNTER, CLAMAV, PRELOAD over SNORT and UFW.
 By then unless more software happens it was done.
-Dangerous commands listed below
-sudo systemd-run --scope -p MemoryLimit=10000M -p CPUQuota=100% ionice -c3 -n7 *kworker*
-ulimit -f 10000000 *
-sudo ionice -c3 -p $$ or *
+
+"Android sorcerers and deny more air is not"
+
+sudo systemd-run --scope -p MemoryLimit=1000M -p CPUQuota=100% ionice -c3 -n7 *kworker*
+
+ulimit -f 100000 *
+
+sudo ionice -c3 -p $$ or * or */*
+
+sudo chown root:root /usr/bin/lwp-request/*
+
+sudo mv /usr/sbin/*cupsd* /home/exzo/Documents and kill its process
+
+sudo apt update
+
+Install FIREWALLD, OPENSNITCH, SURICATA, FIREJAIL, RKHUNTER, CLAMAV, PRELOAD on default over SNORT and UFW.
+
+sudo apt install *-*gnome*
+
+sudo apt update
+
+sudo apt upgrade
+
+reboot
+
+sudo apt install *gnome*-*
+
+All, after, things will be blue with.
+sudo ubuntu-drivers install
