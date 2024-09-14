@@ -24,7 +24,7 @@ Use encrypted containers or encrypted virtual hard drives instead of disk encryp
 
 There's no application to encrypt existing folders currently 2024.
 
-Finally delete sudo service file format alter connection pre-emptive looper and all services in etc/systemd/system must be rooted.
+Finally delete sudo service file format alter connection pre-emptive looper and all services in etc/systemd/system must be rooted. This is an overhead BIOS. Meaning that when you enter any operating system, lower chances to go online with this security.
 
 
 That sudo service can appear and disappear depending on firewall.
