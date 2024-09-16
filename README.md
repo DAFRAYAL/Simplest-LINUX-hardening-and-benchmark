@@ -12,62 +12,101 @@ UBUNTU is the best. With PLASMA desktop environment, because it does not need GN
 
 Use PCI-DSS, CIS or DISA policies if you want, but this is pretty much it. 
 
-So. Create another user and just sudo chown that user whole system file permission from recovery console except /root/ folder which should be over allocated with root permissions.
-It is chown user:user **/**/**/**/**/** or chown user:user **/**/**/**/**/** going forward and keep going back until chown user:user / on the length without chmod command.
-This user has chroot and cpu in limits.conf /etc/security at 0. Thus your main user that you will use can be exclusive.
-
-Because
-Virtualization
-Ramdisk
-1. Secure boot
-
-You get error like WARNING: cannot start document portal: Can't mount path /run/user/1000/doc. Fix it yourself for applications coming with DEBIAN. All after /etc/sudoers is that user except that /etc/sudoers folder. /etc/sudoers.d is that user and /etc/sudoers/README is that user and if you have ZFS then /etc/sudoers.d/zfs is that user from recovery console and finally for logged on user /usr/bin/sudo is root and it needs the chmod which is chmod 4755 /usr/bin/sudo
-
-So. You will have to enable services over and over again of applications.
-
 If you cannot install UNIX through kind of VENTOY set of UEFI boot loading then do not install it at all since intranet.
 
 Use encrypted containers or encrypted virtual hard drives instead of disk encryptions for any work since internet. 
 
 There's no application to encrypt existing folders currently 2024.
 
-Finally delete sudo service file format alter connection pre-emptive looper and all services in etc/systemd/system must be rooted. 
+Install OPENSNITCH, FIREJAIL, RKHUNTER, CLAMAV, PRELOAD, SURICATA, SNORT on default over UFW.
+
+Ask BING AI or CHAT GPT to configure FIREJAIL and RKHUNTER as service.
+
+For SURICATA and SNORT the configuration files must have the right device, interface, adapter name like wlp2s1, wlo1, eth0 and the home network range must be correct.
+
+Do not install FIREWALLD.
+
+Create another user and just sudo chown that user whole system file permission from recovery console except /root/ folder which should be over allocated with root permissions.
+
+It is chown user:user **/**/**/**/**/** or chown user:user **/**/**/**/**/** going forward and keep going back until chown user:user / on the length without chmod command.
+
+This user has chroot and cpu in limits.conf /etc/security at 0. Thus your main user that you will use can be exclusive.
+
+You get error like WARNING: cannot start document portal: Can't mount path /run/user/1000/doc. Fix it yourself for applications coming with DEBIAN.
+
+All after /etc/sudoers is that user except that /etc/sudoers folder. /etc/sudoers.d is that user and /etc/sudoers/README is that user and if you have ZFS then /etc/sudoers.d/zfs is that user from recovery console and finally for logged on user /usr/bin/sudo is root and it needs the chmod which is chmod 4755 /usr/bin/sudo.
+
+So. You will have to enable services over and over again of applications.
+
+Or.
+..
+..
+...
+
+Finally delete sudo service file format alter connection pre-emptive looper and all services in etc/systemd/system must be rooted.
+
 Mostly this is an overhead BIOS.
+
 Meaning that when you enter any operating system, lower chances to go online with this security.
+
 That sudo service can appear and disappear depending on firewall.
+
 By then unless more software happens it was done.
+
 "Android sorcerers and deny more air is not".
 
-From the operating system start directory
+From the operating system start directory execute these commands. Best to use recovery console without sudo.
+
 sudo systemd-run --scope -p MemoryLimit=1000M -p CPUQuota=100% ionice -c3 -n7 /*/
+
 sudo ionice -c3 -p $$
+
 sudo ionice -c3 -p *
+
 sudo ionice -c3 -p /*/*
+
 sudo ionice -c3 -p */*
+
 ulimit -f 100000 /*/*/*/*/*/*/*/*
 #
+#
 sudo chown root:root /usr/bin/lwp-request/*
+
 sudo chmod 0 /usr/bin/lwp-request/*
+
 sudo chown root:root /usr/sbin/*cupsd*
+
 sudo chmod 0 /usr/sbin/*cupsd*
+
 sudo chown root:root
 #
+#
 sudo apt install *-*gnome*
+
 sudo apt update
+
 sudo apt upgrade
+
 #reboot
+
 sudo apt install *gnome*-*
+
 #reboot
+
 sudo ubuntu-drivers install
+
 #reboot
+
 #All, after, things will be blue with.
 
-Install OPENSNITCH, FIREJAIL, RKHUNTER, CLAMAV, PRELOAD, SURICATA, SNORT on default over UFW.
-Ask BING AI to configure FIREJAIL and RKHUNTER as service.
-For SURICATA and SNORT the configuration files must have the right device, interface, adapter name like wlp2s1, wlo1, eth0 and the home network range must be correct.
-Do not install FIREWALLD.
-#
-#
+No, virtualization.
+
+No, ramdisk.
+
+No, security feature from BIOS like TPM, etc...
+
+Yes, secure boot.
+
 These permissions listed below are old.
 We grant ourselves with own user account name permission over folders.
 #
