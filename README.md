@@ -1,18 +1,20 @@
 # Simplest LINUX hardening and benchmark
 
-Will add other unix system groups allocations later. You can always use ITARIAN, SNORT services.
+You can always use ITARIAN, AZURE ARC services.
 
 Don't use asterisk in DEBIAN packaging installations. You may try that on RED HAT.
 
 ORACLE LINUX is most recommended. Yet CENTOS Is more compatible with packages.`
 
-UBUNTU is the best. With PLASMA desktop environment, because it does not need GNOME shell or GDM.
+UBUNTU is the best. With PLASMA desktop environment, because it does not need GNOME shell or GDM, XORG, but it is best to keep default to be generic for overall system configuration firmly, firmly except for being generic.
+
+"It's coming from within hardware - no, it's coming from within operating systems".
 
 Use PCI-DSS, CIS or DISA policies if you want, but this is pretty much it. 
 
-I think that you can use your user account as exclusive with automatic logon while having its chroot at zero.
-
-So. Create another user and just sudo chown that user whole system file permission from recovery console except /root/ folder which should be over allocated with root permissions. It is chown user:user **/**/**/**/**/** or chown user:user **/**/**/**/**/** going forward and keep going back until chown user:user / on the length without chmod command. This user has chroot and cpu in limits.conf /etc/security at 0. Thus your main user that you will use can be exclusive.
+So. Create another user and just sudo chown that user whole system file permission from recovery console except /root/ folder which should be over allocated with root permissions.
+It is chown user:user **/**/**/**/**/** or chown user:user **/**/**/**/**/** going forward and keep going back until chown user:user / on the length without chmod command.
+This user has chroot and cpu in limits.conf /etc/security at 0. Thus your main user that you will use can be exclusive.
 
 Because
 Virtualization
@@ -29,50 +31,44 @@ Use encrypted containers or encrypted virtual hard drives instead of disk encryp
 
 There's no application to encrypt existing folders currently 2024.
 
-Finally delete sudo service file format alter connection pre-emptive looper and all services in etc/systemd/system must be rooted. This is an overhead BIOS. Meaning that when you enter any operating system, lower chances to go online with this security.
-
-
+Finally delete sudo service file format alter connection pre-emptive looper and all services in etc/systemd/system must be rooted. 
+Mostly this is an overhead BIOS.
+Meaning that when you enter any operating system, lower chances to go online with this security.
 That sudo service can appear and disappear depending on firewall.
-
 By then unless more software happens it was done.
+"Android sorcerers and deny more air is not".
 
-"Android sorcerers and deny more air is not"
-
-Here are some commands below
-
-sudo systemd-run --scope -p MemoryLimit=1000M -p CPUQuota=100% ionice -c3 -n7 *kworker*
-
-ulimit -f 100000 *
-
-sudo ionice -c3 -p $$ or * or */*
-
+From the operating system start directory
+sudo systemd-run --scope -p MemoryLimit=1000M -p CPUQuota=100% ionice -c3 -n7 /*/
+sudo ionice -c3 -p $$
+sudo ionice -c3 -p *
+sudo ionice -c3 -p /*/*
+sudo ionice -c3 -p */*
+ulimit -f 100000 /*/*/*/*/*/*/*/*
+#
 sudo chown root:root /usr/bin/lwp-request/*
-
-sudo mv /usr/sbin/*cupsd* /home/exzo/Documents and kill its process
-
-sudo apt update
-
-Install FIREWALLD, OPENSNITCH, SURICATA, FIREJAIL, RKHUNTER, CLAMAV, PRELOAD on default over SNORT and UFW.
-
-Chrome works without error over the decoy user.
-
+sudo chmod 0 /usr/bin/lwp-request/*
+sudo chown root:root /usr/sbin/*cupsd*
+sudo chmod 0 /usr/sbin/*cupsd*
+sudo chown root:root
+#
 sudo apt install *-*gnome*
-
 sudo apt update
-
 sudo apt upgrade
-
-reboot
-
+#reboot
 sudo apt install *gnome*-*
-
-All, after, things will be blue with.
+#reboot
 sudo ubuntu-drivers install
+#reboot
+#All, after, things will be blue with.
 
-
+Install OPENSNITCH, FIREJAIL, RKHUNTER, CLAMAV, PRELOAD, SURICATA, SNORT on default over UFW.
+Ask BING AI to configure FIREJAIL and RKHUNTER as service.
+For SURICATA and SNORT the configuration files must have the right device, interface, adapter name like wlp2s1, wlo1, eth0 and the home network range must be correct.
+Do not install FIREWALLD.
 #
 #
-I am using these permissions listed below.
+These permissions listed below are old.
 We grant ourselves with own user account name permission over folders.
 #
 #
