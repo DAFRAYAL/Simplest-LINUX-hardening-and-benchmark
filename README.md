@@ -12,7 +12,12 @@ Use PCI-DSS, CIS or DISA policies if you want, but this is pretty much it.
 
 I think that you can use your user account as exclusive with automatic logon while having its chroot at zero.
 
-So. Create another user and just sudo chown that user whole system file permission from recovery console except /root/ folder which should be over allocated with root permissions. It is chown user:user "*/*/*/*/*/*" or chown user:user "/*/*/*/*/*/*" and keep going back until chown user:user / on the length without chmod command. This user has chroot and cpu in limits.conf /etc/security at 0. Thus your main user that you will use can be exclusive.
+So. Create another user and just sudo chown that user whole system file permission from recovery console except /root/ folder which should be over allocated with root permissions. It is chown user:user **/**/**/**/**/** or chown user:user **/**/**/**/**/** going forward and keep going back until chown user:user / on the length without chmod command. This user has chroot and cpu in limits.conf /etc/security at 0. Thus your main user that you will use can be exclusive.
+
+Because
+Virtualization
+Ramdisk
+1. Secure boot
 
 You get error like WARNING: cannot start document portal: Can't mount path /run/user/1000/doc. Fix it yourself for applications coming with DEBIAN. All after /etc/sudoers is that user except that /etc/sudoers folder. /etc/sudoers.d is that user and /etc/sudoers/README is that user and if you have ZFS then /etc/sudoers.d/zfs is that user from recovery console and finally for logged on user /usr/bin/sudo is root and it needs the chmod which is chmod 4755 /usr/bin/sudo
 
